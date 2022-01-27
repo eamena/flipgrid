@@ -1,0 +1,55 @@
+body {
+  font-family: "Roboto", serif !important;
+  background-color: #eee;
+}
+.background {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 140px;
+  background-color: #eee;
+}
+#root {
+}
+
+.card {
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 10px !important;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  h2 {
+    font-weight: 900;
+  }
+
+  label {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    padding: 3px 0;
+    text-transform: capitalize;
+  }
+
+  input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #eee;
+  }
+
+  .submit {
+    //margin: 15px 0 0;
+    position: absolute;
+    right: 0;
+    margin-bottom: 15px;
+    background-color: #dd3333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 17px;
+  }
+}
