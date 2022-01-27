@@ -2,6 +2,8 @@ import React from "react";
 import { Card } from "react-bootstrap";
 
 const Confirmation = ({ firstName, email }) => {
+  // Not the best way to handle the refresh of the page.
+  // It would have been better to set submit to false and clean the variables in state
   const handleClick = () => {
     window.location.reload(false);
   };
@@ -18,7 +20,7 @@ const Confirmation = ({ firstName, email }) => {
           <p>
             <b>{email}</b>
           </p>
-          <div className="position-relative my-4">
+          <div className="position-relative my-5">
             <button className="submit" type="submit" onClick={handleClick}>
               sign in
             </button>

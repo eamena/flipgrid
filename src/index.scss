@@ -1,3 +1,5 @@
+// Not good to use important but for some reasson my scss was
+// being overwritten by some of the boostrap sccs.
 body {
   font-family: "Roboto", serif !important;
   background-color: #eee;
@@ -9,9 +11,6 @@ body {
   padding: 140px;
   background-color: #eee;
 }
-#root {
-}
-
 .card {
   max-width: 500px;
   padding: 30px;
@@ -41,12 +40,12 @@ body {
     border-radius: 3px;
     border: 1px solid #ced4da;
     margin-bottom: 3px;
+    height: 35px;
   }
 
   .submit {
-    //margin: 15px 0 0;
     position: absolute;
-    top: -10px;
+    top: -30px;
     right: 0;
     margin-bottom: 15px;
     background-color: #dd3333;
