@@ -16,12 +16,6 @@ function App(touched) {
       email: "",
       password: "",
     },
-    // onSubmit: (values) => {
-    //   setFirstName(values.firstName);
-    //   setEmail(values.email);
-    //   setPassword(values.password);
-    //   setSubmit(true);
-    // },
   });
 
   const handleSubmit = () => {
@@ -97,10 +91,21 @@ function App(touched) {
                     value={formik.values.password}
                     touched={touched}
                   />
-                  {formik.errors.password && (
-                    <span className="error">{formik.errors.password}</span>
+                  {formik.touched.password && !formik.values.password ? (
+                    <div className="font-small text-danger">
+                      Password is Required
+                    </div>
+                  ) : (
+                    formik.touched.password &&
+                    !/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/i.test(
+                      formik.values.password
+                    ) && (
+                      <div className="font-small text-danger">
+                        Password length must be between 8 and 15 characters
+                      </div>
+                    )
                   )}
-
+                  {/* Password!123 */}
                   <div className="position-relative my-4">
                     <button
                       className="submit"
