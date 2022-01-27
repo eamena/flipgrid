@@ -53,5 +53,10 @@ body {
     border: none;
     border-radius: 5px;
     padding: 5px 17px;
+    text-transform: capitalize;
+  }
+
+  .error {
+    color: #dd3333;
   }
 }
